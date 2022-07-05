@@ -36,7 +36,7 @@ func TestIndexRoute(t *testing.T) {
 			route:         "/cool",
 			expectedError: false,
 			expectedCode:  200,
-			expectedBody:  "{\"message\":\"This route is cool as ice!\"}",
+			expectedBody:  "{\"message\":\"This route is cool as iceBREAK!\"}",
 		},
 		{
 			description:   "non existing route",
