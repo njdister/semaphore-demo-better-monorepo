@@ -32,6 +32,13 @@ func TestIndexRoute(t *testing.T) {
 			expectedBody:  "{\"message\":\"Hello from go-service-1!\"}",
 		},
 		{
+			description:   "cool route",
+			route:         "/cool",
+			expectedError: false,
+			expectedCode:  200,
+			expectedBody:  "{\"message\":\"This route is cool as iceBREAK!\"}",
+		},
+		{
 			description:   "non existing route",
 			route:         "/i-dont-exist",
 			expectedError: false,

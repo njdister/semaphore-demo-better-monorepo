@@ -32,6 +32,12 @@ func Setup() *fiber.App {
 		})
 	})
 
+	app.Get("/cool", func(c *fiber.Ctx) error {
+		return c.JSON(&fiber.Map{
+			"message": "This route is cool as ice!",
+		})
+	})
+
 	// Return the configured app
 	return app
 }
