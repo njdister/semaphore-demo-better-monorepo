@@ -7,6 +7,8 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/logger"
 )
 
+// Initial release
+// Test version bump
 func main() {
 	// Use an external setup function in order
 	// to configure the app in tests as well
