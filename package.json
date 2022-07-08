@@ -1,0 +1,19 @@
+{
+  "name": "semaphore-demo-better-monorepo",
+  "version": "*",
+  "description": "Testing Semaphore CIs monorepo capabilities and general workflow",
+  "packageManager": "pnpm@6.32.25",
+  "devDependencies": {
+    "multi-semantic-release": "^2.13.0"
+  },
+  "release": {
+    "branches": ["main"],
+    "repositoryUrl": "https://github.com/setsailco/semaphore-demo-better-monorepo.git",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ],
+    "noCi": true
+  }
+}
